@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles.css" />
+    <title>AuskaEagles Limited</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <h2>AuskaEagles</h2>
+      </div>
+      <nav>
+        <ul>
+          <a href="#">Home</a>
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </ul>
+      </nav>
+    </header>
+
+    <span class="divider"></span>
+
+    <div class="scroll">
+        <a href="#">
+        <h3>&#8593</h3>
+        <p>Up</p>
+        </a>
+    </div>
+
+    <main>
+      <section class="hero-ctn">
+        <div class="hero-text">
+          <h1>Increasing Project Success through sound technical knowledge and Optimum Use of Resources</h1>
+          <a href="#contact">
+            <button>Contact Us</button>
+          </a>
+        </div>
+
+        <div class="hero-img">
+          <img src="/img/apartment2.jpeg" alt="A building" />
+        </div>
+      </section>
+
+      <section class="about" id="about">
+            <h3>About Us</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde minima blanditiis quam possimus voluptatibus! Nam magnam illo velit omnis, accusantium soluta minus eos amet veritatis, facere dicta. Possimus magni incidunt earum, et consequuntur alias quidem 
+                <!-- <span class="dots">...</span>  -->
+            <span id="more-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam vero velit sunt soluta consequuntur quasi nemo sequi et maxime, officiis est dolorem quo expedita suscipit, veritatis blanditiis beatae non quas inventore sint placeat nisi ipsam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, natus? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut, id. </span><button onclick="readMore()" id="read-more">...Read more</button></span>
+
+            </p>
+        </section>
+        <section id="services">
+            <h3>SERVICES</h3>
+            <div class="services-list">
+                <ul>
+                    <li class="design">
+                        <img src="/img/design.jpg" alt="">
+                        <h4>Design</h4>
+                        <p>We Offer Architectural and Structural Designs</p>
+                    </li>
+                    <li class="construction">
+                        <h4>Construction</h4>
+                        <p>Do you have your plans already? We have professionals with several years of hands-on experience to help you bring your dreams to reality</p>
+                    </li>
+                    <li class="pm">
+                        <h4>Project Management</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, ipsum. Quas dolorum reiciendis quibusdam animi numquam dicta necessitatibus. </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+
+        <section id="projects">
+            <h3>Projects</h3>
+            <div class="projects-ctn">
+                <div class="project"></div>
+                <div class="project"></div>
+                <div class="project"></div>
+                <div class="project"></div>
+                <div class="project"></div>
+            </div>
+        </section>
+
+
+
+        
+        <section id="contact">
+            <h3>CONTACT US</h3>
+            <address>
+                Phone: +2348012345678 <br>
+                Email: auskaeagle.example@gmail.com <br>
+                Address: 1, Assoland estate, Ikeja, Lagos <br>
+                Website: www.auskaeagle.com
+            </address>
+            <br>
+            <p>For further enquiries, please leave a message</p>
+            <form action="">
+                <label for="name" autocomplete="on">Name</label>
+                <input type="text" placeholder="Enter your full name"> <br>
+                <label for="email" autocomplete="on">Email</label>
+                <input type="email" name="email" id="email" placeholder="Enter your email address"> <br>
+                <label for="meassage">Message</label>
+                <textarea name="message" id="message" cols="30" rows="10">Leave a message here</textarea>
+                <input type="submit" value="submit">
+            </form>
+        </section>
+    </main>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
