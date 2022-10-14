@@ -7,11 +7,12 @@ function readMore() {
     var moreText = document.querySelector('#more-text')
     var readMore = document.querySelector('#read-more');
 
-    if (moreText.style.display === 'none') {
+    if (moreText.style.display === 'none' && readMore.innerHTML === '...Read more') {
         moreText.style.display = 'inline';
         readMore.innerHTML = '...Read less'
     } else {
         moreText.style.display = "none";
+        readMore.innerHTML= '...Read more'
     }
 }
 
