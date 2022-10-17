@@ -5,22 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+    <script src="https://kit.fontawesome.com/f118ba513f.js" crossorigin="anonymous"></script>
     <title>AuskaEagles Limited</title>
   </head>
+
   <body>
     <header>
       <div class="logo">
         <h2>AuskaEagles</h2>
-      </div>
+        <button id="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+      </button>
+
       <nav>
         <ul>
-          <a href="#">Home</a>
-          <a href="#about">About</a>
-          <a href="#services">Services</a>
-          <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
+          <a href="#" class="nav-link">Home</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#services" class="nav-link">Services</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#contact" class="nav-link">Contact</a>
         </ul>
+        
       </nav>
+      
+      </div>
+      
     </header>
 
     <span class="divider"></span>
@@ -28,7 +41,7 @@
     <div class="scroll">
         <a href="#">
         <h3>&#8593</h3>
-        <p>Up</p>
+        <!-- <p>UP</p> -->
         </a>
     </div>
 
@@ -37,7 +50,7 @@
         <div class="hero-text">
           <h1>Increasing Project Success through sound technical knowledge and Optimum Use of Resources</h1>
           <a href="#contact">
-            <button>Contact Us</button>
+            <button id="contact-us-btn">Contact Us</button>
           </a>
         </div>
 
@@ -47,8 +60,8 @@
       </section>
 
       <section class="about" id="about">
-            <h3>About Us</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde minima blanditiis quam possimus voluptatibus! Nam magnam illo velit omnis, accusantium soluta minus eos amet veritatis, facere dicta. Possimus magni incidunt earum, et consequuntur alias quidem 
+            <h3>ABOUT US</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde minima blanditiis quam possimus voluptatibus! Nam magnam illo velit omnis, accusantium soluta minus eos amet veritatis, facere dicta. Possimus magni incidunt earum, et consequuntur alias quidem Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, in!
                 <!-- <span class="dots">...</span>  -->
             <span id="more-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam vero velit sunt soluta consequuntur quasi nemo sequi et maxime, officiis est dolorem quo expedita suscipit, veritatis blanditiis beatae non quas inventore sint placeat nisi ipsam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, natus? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut, id. </span><button onclick="readMore()" id="read-more">...Read more</button></span>
 
@@ -68,7 +81,7 @@
                     </li>
                     <li class="pm">
                         <h4>Project Management</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, ipsum. Quas dolorum reiciendis quibusdam animi numquam dicta necessitatibus. </p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas dolorum reiciendis quibusdam animi numquam dicta necessitatibus. </p>
                     </li>
                 </ul>
             </div>
@@ -76,33 +89,34 @@
 
 
         <section id="projects">
-            <h3>Projects</h3>
+            <h3>PROJECTS</h3>
+            <p id="sub">Below are some of our ongoing and completed projects</p>
             <div class="projects-ctn">
                 <a href="">
-                <div class="project">
+                <div class="project" id="project1">
                         <img src="./img/apartment4.jpeg" alt="">
                     <p>Construction of a 5-bedroom duplux, Lagos State</p>
                 
                 </div></a>
                 
                 <a href="">
-                <div class="project">
+                <div class="project" id="project2">
                     <img src="./img/apartment1.jpeg" alt="">
                     <p>Construction of a 5-bedroom duplux, Lagos State</p>
                 </div></a>
                 <a href="">
-                <div class="project">
+                <div class="project" id="project3">
                     <img src="./img/interior2.jpg" alt="">
                     <p>Construction of a 5-bedroom duplux, Lagos State</p>
                 </div></a>
 
                 <a href="">
-                <div class="project">
+                <div class="project" id="project4">
                     <img src="./img/apartment5.jpeg" alt="">
                     <p>Construction of a 5-bedroom duplux, Lagos State</p>
                 </div></a>
                 <a href="">
-                <div class="project">
+                <div class="project" id="project5">
                     <img src="./img/apartment3.jpeg" alt="">
                     <p>Construction of a 5-bedroom duplux, Lagos State</p>
                 </div></a>
@@ -114,25 +128,41 @@
         
         <section id="contact">
             <h3>CONTACT US</h3>
-            <address>
-                Phone: +2348012345678 <br>
-                Email: auskaeagle.example@gmail.com <br>
-                Address: 1, Assoland estate, Ikeja, Lagos <br>
-                Website: www.auskaeagle.com
-            </address>
-            <br>
-            <p>For further enquiries, please leave a message</p>
-            <form action="">
-                <label for="name" autocomplete="on">Name</label>
+            <p>For further enquiries, please leave a message below</p>
+            <form action="submit">
+                <label for="name" autocomplete="on">Name:</label>
                 <input type="text" placeholder="Enter your full name"> <br>
-                <label for="email" autocomplete="on">Email</label>
+                <label for="email" autocomplete="on">Email:</label>
                 <input type="email" name="email" id="email" placeholder="Enter your email address"> <br>
-                <label for="meassage">Message</label>
+                <label for="meassage">Message:</label>
                 <textarea name="message" id="message" cols="30" rows="10">Leave a message here</textarea>
-                <input type="submit" value="submit">
+                <input type="submit" value="Submit" id="submit">
             </form>
+            
         </section>
     </main>
+
+    <footer>
+        
+
+        <address>
+            Phone: +2348012345678 <br>
+            Email: auskaeagle.example@gmail.com <br>
+            Address: 1, Assoland estate, Ikeja, Lagos <br>
+            Website: www.auskaeagle.com
+        </address>
+        <div class="socials">
+            Connect with us: 
+            <a href="#"><i class="fa-brands fa-square-facebook"></i>
+            <a href="#"> <i class="fa-brands fa-instagram"></i> </a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i> </a>
+        </div>
+
+        <p>Copyright <span class="material-symbols-outlined"> copyright </span> 2022. All Rights Reserved  </p>
+        <div id="developer"> <a href="#" target="_blank"> Developed by: mid3dev </a> </div>
+                
+
+    </footer>
 
     <script src="./index.js"></script>
   </body>
